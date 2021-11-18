@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <style>
+        body{
+            background-color: rgb(43, 44, 47);
+              
+          border-color: #e2e8f0;
+            
+            font-family: monospace;
+        }
+        .az{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+            background-color: smoke-white;
+            border-radius: 10px;
+        }
+        .azz{
+            display: block;
+            box-sizing: border-box;
+        }
+        .ax{
+            background-color: rgb(250, 255, 250);
+            max-width:500px;
+            color: #4c51bf;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04);
+            border-radius: 10px;
+            box-sizing: inherit;
+        }   
+
+
+        @media only screen and (max-width: 600px) {
+  
+  .az{
+      display: flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+    border-style: solid;
+    border-color: #e2e8f0;
+    background-color: #4c51bf;
+}
+    .azz{
+        max-width:500px
+        
+    }
+  .ax{
+            max-width:350px; 
+            color: rgb(255, 255, 255);
+            background-color: rgb(36, 35, 35);
+        }         
+  ul{
+      width: 300px;
+      color: white;
+  }
+}
+
+@media only screen and (max-width: 900px){
+    .ax{
+        width: 800px;
+    }
+
+}
+        
+        ul{
+            font-size: 20px;
+            
+            
+        }
+        span{
+            color: rgb(255, 0, 149);
+        }
+    </style>
+</head>
+<body>
+    <div class="az">
+        <div class="azz">
+        <div class="ax">
+            
+            <h1>Day One </h1>
+            <ul>we will discuss the basic Data types of in Python</ul>
+            <ul><span>String</span> is a as in Javascript </ul>
+            <ul><span>print</span> is a for output in screen </ul>
+            <ul>Python use Intendation at each line if we skip th space it will show the error <span>Spacing and Indenatation </span></ul>
+            <ul><span>Sting Varible </span></ul>
+            <ul><span>Number int()  and float ()</span> int simple numbers and  float with decimal Values </ul>
+            <ul><span>Sting Varible </span></ul>
+            <ul>It is case sensitive a!= A </ul>
+            <ul><span>variables Name </span></ul>
+            <ul>Varible name cannot be a Number and Build in name for Pyhton functions </ul>
+            <ul>Varible can only contain a-z and 0-9 and _</ul>
+            <ul>Name are Case sensitive can,t have a space in a Varible</ul>
+            <ul><span>myvar = "John"
+               <span> my_var = "John"</span>
+               <span> _my_var = "John"</span>
+               <span> myVar = "John"</span>
+              <span> MYVAR = "John"</span>
+               myvar2 = "John"</span></ul>
+            <ul>These are Legal applyable examples </ul>
+            <ul>CamleCase and Passcal Case <span>Each letter stsrat from a Capital word </span> Snake case<span> Eachletter have a Space</span> are alloawed</ul>
+            <h1>Many Value to a Varible</h1>
+            <ul>we can have define multiple varble values in a single line </ul>
+            <ul>we can declear a single value to multiple varibles </ul>
+            <h1>Unpack a collection of Value </h1>
+            <ul>we can get a list or array value from defining a  single varible and extract values</ul>
+            <h1>String Concatination</h1>
+            <ul>when we give output we can use + and add two strings with each other </ul>
+            <ul>If they are NUmbers then they  will be added </ul>
+            <ul>String and Intiger can,t be added </ul>
+                <h1>Global Varibles</h1>
+                <ul>They are defin Outside of a funtion and then can be used by all functions and If a varible is define in Local scope then its value will not be used outside of a functions</ul>
+                <ul><span>global</span>      if we defina Global keyword in side a function then we can use its value Outside of  a functions</ul>
+                <h1>Build In data Types</h1>
+                <ul><span>Number</span>int, float, complex</ul>
+                <ul><span>sequience Types</span>list , tuples, range</ul>
+                <ul><span>Mapping</span>dict</ul>
+                <ul><span>set Type</span>set, Frozenset</ul>
+                <ul><span>Bollen Type</span> Boll </ul>
+                <ul><span>Binary Type</span>bytes, bytesarray, memeoryview</ul>
+               
+            </div>
+        <div class="ax">
+            <h1>Day Two</h1>
+            <ul>we will discus the examples of Basic Data types </ul>
+            <h1>Python Memory View</h1>
+            <ul><span>Return Memory View Object Of given Argument </span></ul>
+            <ul><span>Pyhton Buffer Protocol</span> A way to access  Internal Data of Object Internal Data is ia an memory array or buffer</ul>
+            <ul>It an API of C </ul>
+            <ul><span>Memery View</span> A safer way to expose buffer Protocol and meory View </ul>
+            <ul><span>Byte Bytesarry are also same examples</span></ul>
+            <h1>Number </h1>
+            <ul>There are three main types </ul>
+            <ul><span>int</span>simple Whole Number of unlimited length</ul>
+            <ul><span>float</span>Number containg Decimals containg Power</ul>
+            <ul><span>complex</span>Scientific NUmber  or Imagenary Part</ul>
+            <ul>Type Convertion  we have differnt Methods we can convert then ti each other </ul>
+            <ul><span>int() , float() , complex()</span></ul>
+            <ul><span>Random Number</span> for generating Random Number</ul>
+            <ul><span>print(radom.random.range(1,50))</span> generate Random NUmber between range </ul>
+            <h1>Python casting</h1>
+            <ul>we can convert type of varible we want  This is done Casting  is done By Constructor Fucntions  </ul>
+            <ul><span>int()</span>converet interget and float and String to Integer a Singel Number</ul>
+            <ul><span>Float()</span>Same as above But Output is an Flaot Decimal Number</ul>
+            <ul><span>str()</span> COnvert to a String</ul>
+            <h1>Sting & Methods</h1>
+            <ul>It is same as is other Programming langages </ul>
+            <ul>Like in all advance Programming langages it have the same Properties </ul>
+            <ul><span>String in Python is an array we can mauplaute it as we can perform operations on an array</span></ul>
+            <ul><span>Looping Throught an string</span></ul>
+            <ul><span>Slice the Text</span> as in arary in Javascript</ul>
+            <ul><span>Build in Methods i n Python for String like</span>Upper Case Lwer case examle strip() for removing extra spacing from begaining<span>replace()</span> replace a world with another word</ul>
+            <ul><span>split()</span>split string to sub string</ul>
+            <ul><span>format()</span>It is used to aconcatnate the String with Integer Value othe wise shows an error Format tek unlimited amount of argument and placed in respective placeholder </ul>
+            <ul><span>Escape Character</span> to enter escicial character like "" we will have  to enter like \" text \" then it willl work</ul>
+            <ul><span>\n</span> for new line </ul>
+            <ul><span>\t</span> for new tab </ul>
+            <ul><span>There are many More Build in Methos in Python for String will read about them</span></ul>
+
+        </div>
+
+        <div class="ax">
+            <h1>Day Three</h1>
+            <h1>Boolen</h1>
+            <ul><span>Detail of String Manuplutation IN Python</span></ul>
+            <ul><span>Boolean Values</span> Return true or false when we compair two values or > < for operation</ul>
+            <ul>Mostlay used in <span>if</span> statement and return value</ul>
+            <ul>
+                # bool() function allow values and return true or flase Most values are true
+                # some values are false if no data is in avarible or in anm array Object Tuple </ul>
+            <ul> # we can also execute a cosde on the bases or Boolen </ul>
+            <h1>Operaters</h1>
+              <ul>They are used to perfomm operation on a values or for comparing values </ul>
+          <ul><span>  Arithmetic operators</span>add subtract divide modules exponent** floor divide // rounde of to nereasrt number etc </ul>
+            <ul><span>  Assignment operators</span>= same x+=3 means x=x+3 same for -  and * %  **  x&=3  have the same case fopr them  </ul>
+            <ul><span>  Comparison operators</span>for comparing two values  == equal != not equal < > </ul>
+            <ul><span>  Logical operators</span>And Or Not sam eexapmles for them c>5 or c<5 </ul>
+            <ul><span>  Identity operators</span>for comparing the Two Objects not they are equa;l but  with they are same with same memory address <span>or</span> return  true if sequience is present in The Object<span>not in </span>return true if sequience with specifi value is  not present</ul>
+            <ul><span>  Membership operators</span>sma as Above bot not have same memeory address  </ul>
+            <ul><span>  Bitwise operators</span>They are used to compair the Binaray Numbers  & | ~  << >> </ul>
+            <ul></ul>
+            <h1>List in Python</h1>
+            <ul><span>List item are in order and allow duplication values</span></ul>
+            <ul><span>when we say Order we means if we add new item to it will be added at the last or end </span></ul>
+            <ul><span>ChangeAble </span>means that we can add remove  item in a list  after it has been created </ul>
+            <ul><span>Allow Duplication</span>It means that  same item can be repated agin and again [apple, banan, apple]</ul>
+            <ul><span>List Data type </span> It can be any data type  can contain all data types in it number boolen String   list1 = ["abc", 34, True, 40, "male"] </ul>
+            
+            
+            <h1>Python Collection of Arrays</h1>
+                <ul><span>List</span>is a collection whic is order and changeable Allows dupliacte menbers</ul>
+                <ul><span>Tuple</span> is a collection in order unchangeable  Allows  duplicate menbers</ul>
+                <ul><span>Set</span>is a collection in unorder unchangeable and unIndex  Allows No  duplicate menbers</ul>
+                <ul><span>Dictionary</span>is a clollection in ordered **and unchangeable No duplicate members</ul>
+            </div>
+        <div class="ax">
+            <h1>Day Four</h1>
+            <ul><span>Theya are also used to store multiple valyues ina single varbible and written in [] brackets</span></ul>
+            <ul><span>we have discuss al the list method for mnuplutaing the item in an list</span></ul>
+            <ul><span>they are order changeable  and allows duplicates  start from 0 index</span></ul>
+        </div>
+
+        <div class="ax">
+            <h1>Day five</h1>
+            <ul><span>Tuples</span>they are used to store multiple values to an single varibale </ul>
+            <ul>they are written in () Roundde Brackets </ul>
+            <ul> A Tuple is a ccollecion in order  and unchangeable </ul>
+            <ul><span>They are in order and unchangeable  and allowes duplications  start from index value 0</span></ul>
+            <ul><span>Unvcahangeable means</span> Once a Tuples is created we cannot cahneg add , remove  item from a tuples </ul>
+            <ul><span>Order</span>Items have define order they are not change  we canot add items in it </ul>
+            <ul><span>  unpack a Tuple wwe can use it Like a Array method in JS</span></ul>
+            <ul><span>WE CANnot add a item or remove froms tuple but if we convert it to a List then add then convert back to a Tupel</span></ul>
+            <ul><span>  fruits = ("apple", "banana", "cherry")
+
+                (green, yellow, red) = fruits
+                
+                print(green)
+                print(yellow)
+                print(red)</span></ul>
+                <ul></ul>
+                <h1>SET</h1>
+            <ul>they are used to store Multiple value to a single varible  it is Unorder ,unChangable and UnMixable</ul>
+            <ul><span>unorder</span>Means unchangeable and do,nt allow dupliaction </ul>
+            <ul><span>More details are in Pyhon five file </span></ul>
+                <h1>Dictionary</h1>
+                <ul><span>store date to a single varible in for of a key and value pairs</span></ul>
+                <ul><span>It is ordered an cahngeable  and don,t allow dupliaction </span></ul>
+                <ul><span>written in{} </span></ul>
+                <h1><span>Unorder means we can,t refer by using Index value </span></h1>
+                <h1>Else If statement</h1>
+                <ul><span>if else statement and conditional statemt for running code</span></ul>
+                <ul><span>Equal</span>a==b</ul>
+                <h1>Logical Operaters</h1>
+                <ul><span>And</span>Both conditions true so run</ul>
+                <ul><span>Or</span>If one is true</ul>
+                <ul><span>Not</span>Inverse </ul>
+            </div>
+
+            <div class="ax">
+                <h1>Day Five</h1>
+                <h1><span>Loops</span></h1>
+                <h1><span>Intendation</span></h1>
+                <ul>It realy on Intendation insted of brackets</ul>
+               <ul>Logical Operators</ul>
+               <h1>Looops</h1>
+               <ul>used to exicute a statement if it is true</ul>
+               <ul><span>For</span>mostaly used to itterate items from a list set dict tuple </ul>
+               <ul><span>while</span>Requir a varible to be ready</ul>
+               
+            </div>
+
+            <div class="ax">
+                <h1>Day 6</h1>
+                <h1>Function</h1>
+               <ul><span>Block of code which run when called  pass daate as argumnet  and returna answer</span></ul>
+               <h1>Lambda Function</h1>
+               <ul><span>Annonimous function take a argumnet and have one  expession</span></ul>
+
+               <h1>Array</h1>
+               <ul>List are used as array in Python  </ul>
+
+               <h1>Objects</h1>
+                <ul><span>It is Object Orinatation language Almost every thing in Python is a Object with properties and methods </span></ul>
+               
+                <h1>Classes</h1>
+                <ul><span>Class is likea Constructor or BluePrint for Constructing the Objects </span></ul>
+                <ul><span>int() man Fucntions for creating the main templete for creatingthe Object Templete then use can set the vaalues </span></ul>
+                <ul><span>Python Inhereiance allow us to define a class that inherit methods and Properties of other class</span></ul>
+                <ul>Parent Class</ul>
+                <ul>Childern Class</ul>
+
+                <h1>Python Scope</h1>
+                <ul>
+                    If you operate with the same variable name inside and outside of a function, Python will treat them as two separate variables, one available in the global scope (outside the function) and one available in the local scope (inside the function):
+                </ul>
+                <ul><span>Local</span></ul>
+                <ul><span>Global</span>If global x in side of function we can use it outside of a function</ul>
+                
+            </div>
+            <div class="ax">
+                <h1>Day 7</h1>
+                <h1>Python modules</h1>
+                <ul><span>A file contaoning  a set of functions  whic we wnat to include in a Application </span></ul>
+                <ul>when using a function from a module use syntex  module_name.function  </ul>
+                <ul><span>we can also a Object Function array in a module </span></ul>
+                <ul>we can also used naaming convention <span>as import moduel as md</span></ul>
+                <ul>There are several build in module in  Python  </ul>
+                <h1>Date Object</h1>
+                <h1>Time Object</h1>
+                <ul><span>Time is also a Object In Python </span></ul>
+                <ul><span>strftime()</span> for converting date and time to string using %M %D and %Y</ul>
+                <h1>Math Object</h1>
+                <ul><span>Have a alot of Build in Math function perform Math Taks    </span></ul>
+                <h1>Multi Threading concept in python </h1>
+
+                <ul><span>Most Programs are single threaded But we can use Muti threading for performance </span>import threading</ul>
+            
+                <h1>JSON</h1>
+                <ul><span> SYNTEX FOR STORING THE DATA  and exchanging data</span></ul>
+                <ul>is a text as in Javascript Object Notation</ul>
+                <ul>Have build in pakage called json </ul>
+                <ul><span>Mostaly use dictonary</span> convert python dict to json Object </ul>
+                <ul>we can convert all type of Data type ina JSON Object </ul>
+
+                <h1>PIP</h1>
+                <ul><span>Python Pakage Manager</span></ul>
+                <ul>It contain all files we need in a Module</ul>
+                <ul><span>Modules are code libraries we need in our Projects</span></ul>
+                <ul>Mostaly used  for pakage installing and libraries and Framework</ul>
+                <h1>Try Expect</h1>
+                <ul><span>try</span>test block of code for error</ul>
+                <ul><span>expect</span>let us handel the  error</ul>
+                <ul><span>finally</span>execute the code  for Result </ul>
+                <h1>Input()</h1>
+                   
+                <h1>String formte</h1>
+                <ul><span>Somethime there is a part of string that we don,t controll maybe come from datebase or user input  for such value we use {brackest }  retub value from fromat  </span></ul>
+                <ul>as in JS </ul>
+                <h1>RegEx</h1>
+                <ul>used for sequience of charaxter for serch pattern</ul>
+                <ul> Check a string contain a specifi value or not </ul>
+                <ul><span>import re</span> several buil in functions</ul>
+            </div>
+    </div>
+    </div>
+    
+</body>
+</html>
